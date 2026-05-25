@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Meet Shingala Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-details.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">MS.</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#certificates">Certificates</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Scroll Progress Indicator -->
+            <div class="scroll-progress-container">
+                <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="project-details-main">
+        <!-- Back Button -->
+        <div class="back-button-container">
+            <a href="index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+
+        <!-- Project Hero Section -->
+        <section class="project-hero">
+            <div class="project-hero-content">
+                <h1 id="project-title" class="project-main-title">Project Title</h1>
+                <p id="project-tagline" class="project-tagline">Quick description</p>
+                <div class="project-meta">
+                    <span id="project-year" class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                    <span id="project-status" class="meta-item status"><i class="fas fa-lightbulb"></i> In Progress</span>
+                </div>
+                <div class="project-hero-buttons">
+                    <a id="github-link" href="#" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a id="live-link" href="#" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Content -->
+        <section class="project-content">
+            <div class="content-wrapper">
+                <!-- Overview Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-star"></i> Overview
+                    </h2>
+                    <div id="project-overview" class="section-content">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Key Features Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-rocket"></i> Key Features
+                    </h2>
+                    <div id="project-features" class="features-grid">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Installation Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-wrench"></i> Installation
+                    </h2>
+                    <div id="project-installation" class="section-content">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Usage Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-play"></i> Usage
+                    </h2>
+                    <div id="project-usage" class="section-content">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Technologies Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-code"></i> Technologies Used
+                    </h2>
+                    <div id="project-tech" class="tech-stack">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Project Structure Section -->
+                <div class="content-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-folder-tree"></i> Project Structure
+                    </h2>
+                    <div id="project-structure" class="code-block">
+                        <pre><code>Loading...</code></pre>
+                    </div>
+                </div>
+
+                <!-- Additional Info Section -->
+                <div class="content-section" id="additional-section">
+                    <h2 class="section-subtitle">
+                        <i class="fas fa-info-circle"></i> More Information
+                    </h2>
+                    <div id="project-additional" class="section-content">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="project-sidebar">
+                <!-- Quick Links -->
+                <div class="sidebar-box">
+                    <h3>Quick Links</h3>
+                    <div class="quick-links">
+                        <a id="sidebar-github" href="#" target="_blank" class="link-item">
+                            <i class="fab fa-github"></i> Repository
+                        </a>
+                        <a id="sidebar-demo" href="#" target="_blank" class="link-item">
+                            <i class="fas fa-globe"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Highlights -->
+                <div class="sidebar-box">
+                    <h3>Highlights</h3>
+                    <ul id="project-highlights" class="highlights-list">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="sidebar-box">
+                    <h3>Tech Stack</h3>
+                    <div id="sidebar-tech" class="tech-badges">
+                        <span class="badge">Loading...</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Floating Interactive Widgets -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+    <div class="toast-container" id="toast-container"></div>
+
+    <div class="lofi-widget" id="lofi-widget" title="Ambient Lo-fi Studio Player">
+        <button class="lofi-btn" id="lofi-btn" aria-label="Play Ambient Music">
+            <i class="fas fa-play"></i>
+        </button>
+        <div class="lofi-visualizer">
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+        </div>
+        <audio id="ambient-audio" loop preload="none">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/910000000000?text=Hi%20Meet,%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!" 
+           target="_blank" 
+           class="whatsapp-btn" 
+           id="whatsapp-btn"
+           aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Chat with Meet</span>
+        </a>
+    </div>
+
+    <div class="chatbot-widget" id="chatbot-widget">
+        <button class="chatbot-toggle-btn" id="chatbot-toggle-btn" aria-label="Open AI Assistant Chatbot">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-header-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="chat-header-name">Lab Assistant</div>
+                        <div class="chat-header-status">
+                            <span class="availability-dot"></span> Online
+                        </div>
+                    </div>
+                </div>
+                <button class="chat-close-btn" id="chat-close-btn" aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-history" id="chat-history">
+                <div class="chat-msg bot">
+                    Hello! I'm Meet's AI assistant. Ask me anything about his projects, technical skills, or education.
+                </div>
+            </div>
+            <div class="chat-quick-replies" id="chat-quick-replies">
+                <button class="quick-reply-chip" data-question="Tell me about Meet's projects.">Projects Overview</button>
+                <button class="quick-reply-chip" data-question="What are Meet's top skills?">Top Skills</button>
+                <button class="quick-reply-chip" data-question="Is Meet looking for internships?">Internships Info</button>
+                <button class="quick-reply-chip" data-question="How can I contact Meet?">Get Contact Links</button>
+            </div>
+            <form class="chat-input-form" id="chat-input-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" class="chat-send-btn" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <p>&copy; 2026 Meet Shingala. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart"></i> and pure code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="project-details.js"></script>
+</body>
+
+</html>

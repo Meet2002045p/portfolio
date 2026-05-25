@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Shingala | AI & Data Science Portfolio</title>
+    <meta name="description"
+        content="Futuristic personal portfolio of Meet Shingala, an AI & Data Science enthusiast showcasing advanced machine learning, data engineering, and interactive web projects.">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor Ring & Dot -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+    <!-- Global Toast Alert Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Sticky Header & Navbar -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">MS.</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Scroll Progress Indicator -->
+            <div class="scroll-progress-container">
+                <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Left Social Media Dock -->
+    <aside class="social-dock">
+        <a href="https://github.com/Meet2002045p" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/meet-shingala-695b742b4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:meet.shingala@example.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+        <a href="#" target="_blank" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+    </aside>
+
+    <!-- Right Email Dock -->
+    <aside class="email-dock">
+        <a href="mailto:meet.shingala@example.com">meet.shingala@example.com</a>
+    </aside>
+
+    <!-- Main Content Grid -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <canvas id="particles"></canvas>
+            
+            <!-- Slow Gradient Background Orbs -->
+            <div class="hero-bg-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+
+            <div class="hero-content">
+                <p class="greeting">Hello World, my name is</p>
+                <h1 class="name"><span>Meet Shingala.</span></h1>
+                <h2 class="role">I am a <span class="typing-text"></span></h2>
+                <p class="intro">
+                    Building the future with data and intelligence. I specialize in turning complex data into actionable
+                    insights and building intelligent applications using computer vision, machine learning, and interactive tools.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- Bouncing Scroll Down Indicator -->
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="mouse-wheel">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <!-- Story Narrative -->
+                <div class="about-text reveal reveal-left">
+                    <p>
+                        Hello! I'm Meet, a passionate <strong>AI & Data Science Enthusiast</strong> dedicated to
+                        exploring the depths of machine learning, data engineering, and virtual user experiences.
+                    </p>
+                    <p>
+                        My journey started with a curiosity for how algorithms extract intelligence from raw inputs, and it has evolved into building visual toolkits that solve real-world problems. Whether it's neural network signal flows or computer vision tracking interfaces, I strive for coding clarity and clean UI design.
+                    </p>
+                    <p>
+                        I am currently looking for <strong>internship opportunities</strong> and <strong>collaborative projects</strong>
+                        where I can contribute my machine learning skillset, push technological boundaries, and learn from industry leaders.
+                    </p>
+                    
+                    <!-- Hobbies Grid -->
+                    <h3 class="hobbies-title"><i class="fas fa-cubes"></i> Creative Hobbies</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobbies-card"><i class="fas fa-microchip"></i> AI Research</div>
+                        <div class="hobbies-card"><i class="fas fa-paint-brush"></i> Computer Vision</div>
+                        <div class="hobbies-card"><i class="fas fa-code-branch"></i> Open Source</div>
+                        <div class="hobbies-card"><i class="fas fa-hiking"></i> Exploration</div>
+                    </div>
+                </div>
+
+                <!-- Glassmorphic Stats Counters -->
+                <div class="about-stats reveal reveal-right">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="stat-number" data-target="350">0</div>
+                        <div class="stat-label">Git Commits</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-hourglass-half"></i></div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Months Coding</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- Category 1: Languages -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-database"></i> SQL (MySQL)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-hashtag"></i> C++</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Machine Learning -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-network-wired"></i> Deep Learning (TensorFlow)</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-microchip"></i> Scikit-Learn</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-eye"></i> Computer Vision (OpenCV)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-language"></i> NLP & LLM APIs</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Data Analysis -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-chart-line"></i> Data Analysis & Viz</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-table"></i> Pandas & NumPy</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-chart-area"></i> Matplotlib & Seaborn</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-chart-bar"></i> BI Tools (Tableau/PowerBI)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fas fa-bolt"></i> Streamlit Interfaces</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Web & DevOps -->
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-cubes"></i> Tools & Cloud</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-git-alt"></i> Version Control (Git)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-docker"></i> Docker Containers</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-aws"></i> Cloud Services (AWS)</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-info">
+                                <span class="skill-name-icon"><i class="fab fa-html5"></i> Web Frontends (HTML/CSS)</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience & Education Timeline Section -->
+        <section id="timeline" class="section">
+            <h2 class="section-title">Timeline</h2>
+            <div class="timeline-container">
+
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2023 - Present</div>
+                        <h3 class="timeline-title">AI & Data Projects Creator</h3>
+                        <h4 class="timeline-subtitle">Independent Exploration</h4>
+                        <p class="timeline-desc">
+                            Designed and deployed advanced streamable applications such as the Data Analysis Agent, handwritten neural visualizers, and CV-based virtual canvasses to demonstrate deep coding proficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2024</div>
+                        <h3 class="timeline-title">Machine Learning Certificate</h3>
+                        <h4 class="timeline-subtitle">Stanford University (Coursera)</h4>
+                        <p class="timeline-desc">
+                            Completed deep-dive curriculum on Supervised Machine Learning covering linear/logistic regression, optimization algorithms, regularization techniques, and decision trees.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2023</div>
+                        <h3 class="timeline-title">Google Data Analytics Certificate</h3>
+                        <h4 class="timeline-subtitle">Google (Coursera)</h4>
+                        <p class="timeline-desc">
+                            Mastered foundational data analytics workflows including spreadsheet calculations, SQL database queries, data preparation structures, and visualization techniques in Tableau.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3 class="timeline-title">Computer Science Undergraduate</h3>
+                        <h4 class="timeline-subtitle">Major: Artificial Intelligence & Data Science</h4>
+                        <p class="timeline-desc">
+                            Pursuing academic B.Tech specializing in core algorithmic structures, discrete mathematics, neural networks, machine learning paradigms, and database designs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section with Filter & Search -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="projects-controls reveal">
+                <!-- Search bar input -->
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="project-search" placeholder="Search by project name or technology...">
+                </div>
+
+                <!-- Categories filter tabs -->
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all">All Projects</button>
+                    <button class="tab-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="tab-btn" data-filter="data-science">Data Science</button>
+                    <button class="tab-btn" data-filter="computer-vision">Computer Vision</button>
+                    <button class="tab-btn" data-filter="web-app">Web Apps</button>
+                </div>
+            </div>
+
+            <!-- Grid displaying project cards -->
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- Project 1: Data Analysis Agent -->
+                <div class="project-card reveal" data-category="data-science" data-id="data-analysis">
+                    <span class="project-category-pill">Data Science</span>
+                    <div class="project-card-header">
+                        <i class="far fa-folder-open project-card-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/Meet2002045p/Data-Analysis-Agent" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://data-analysis-agent.streamlit.app" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Data Analysis Agent</h3>
+                        <p class="project-card-desc">
+                            An automated data analysis tool built with Python & Streamlit. It performs deep-dive analysis, outlier detection, and outputs comprehensive PDF reports.
+                        </p>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Pandas</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: CarbonZero -->
+                <div class="project-card reveal" data-category="web-app" data-id="carbonzero">
+                    <span class="project-category-pill">Web App</span>
+                    <div class="project-card-header">
+                        <i class="far fa-folder-open project-card-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/Meet2002045p/CarbonZero---Sustainability-Calculator" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://carbonzero.streamlit.app" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">CarbonZero 🌱</h3>
+                        <p class="project-card-desc">
+                            A modern sustainability calculator assessing user emissions across transport, electric usage, and dietary choices with custom visualizations.
+                        </p>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Altair</span>
+                        <span>Calculations</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Neural Network Visualizer -->
+                <div class="project-card reveal" data-category="ai-ml" data-id="neural-network">
+                    <span class="project-category-pill">AI & ML</span>
+                    <div class="project-card-header">
+                        <i class="far fa-folder-open project-card-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/Meet2002045p/-Neural-Network-Visualization-Handwritten-Recognition-AI" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://neural-network-viz.streamlit.app" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Neural Network Viz</h3>
+                        <p class="project-card-desc">
+                            Biological signal propagation visualizer tracking real-time synaptical activations on a custom Deep CNN processing handwritten character glyphs.
+                        </p>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>Deep Learning</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                        <span>Canvas API</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Air Drawing -->
+                <div class="project-card reveal" data-category="computer-vision" data-id="air-drawing">
+                    <span class="project-category-pill">Computer Vision</span>
+                    <div class="project-card-header">
+                        <i class="far fa-folder-open project-card-icon"></i>
+                        <div class="project-card-links">
+                            <a href="https://github.com/Meet2002045p/Air-Drawing-Using-Hand-Gesture-Recognition" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Air Drawing 🎨</h3>
+                        <p class="project-card-desc">
+                            A virtual tracking drawing board operating on real-time finger-pinch tracking via computer vision webcams and Google's MediaPipe model.
+                        </p>
+                    </div>
+                    <div class="project-card-tech">
+                        <span>MediaPipe</span>
+                        <span>OpenCV</span>
+                        <span>Python</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certificates" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                
+                <!-- Certificate 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-header">
+                        <i class="fas fa-certificate cert-badge"></i>
+                        <a href="#" target="_blank" class="cert-verify-btn" aria-label="Verify Certificate"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div>
+                        <h3 class="cert-title">Machine Learning Specialization</h3>
+                        <p class="cert-issuer">Stanford University & DeepLearning.AI</p>
+                    </div>
+                    <div class="cert-details">
+                        <span>Date: Jan 2024</span>
+                        <span class="cert-id">ID: STAN-ML-982</span>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-header">
+                        <i class="fas fa-certificate cert-badge"></i>
+                        <a href="#" target="_blank" class="cert-verify-btn" aria-label="Verify Certificate"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div>
+                        <h3 class="cert-title">Google Data Analytics</h3>
+                        <p class="cert-issuer">Google Career Certificates</p>
+                    </div>
+                    <div class="cert-details">
+                        <span>Date: Dec 2023</span>
+                        <span class="cert-id">ID: GOOG-DA-554</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                
+                <!-- Left panel: details and availability -->
+                <div class="contact-info-container reveal reveal-left">
+                    <div>
+                        <h3 class="contact-subtitle">Let's Discuss New Ideas</h3>
+                        <p class="contact-desc">
+                            My inbox is always open. Whether you have a project idea, want to talk about neural structures, or inquire about open developer roles, I'll do my best to respond as quickly as possible!
+                        </p>
+                    </div>
+
+                    <div class="contact-details-list">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:meet.shingala@example.com">meet.shingala@example.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="contact-info-text">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://www.linkedin.com/in/meet-shingala-695b742b4/" target="_blank">Meet Shingala</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Location</h4>
+                                <p>Gujarat, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Availability Status -->
+                    <div class="availability-badge">
+                        <div class="availability-dot"></div>
+                        <span class="availability-text">Open to Internships</span>
+                    </div>
+                </div>
+
+                <!-- Right panel: Glassmorphic form -->
+                <div class="contact-form-card reveal reveal-right">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group" id="group-name">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe">
+                            <span class="error-message">Name cannot be empty.</span>
+                        </div>
+                        
+                        <div class="form-group" id="group-email">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                            <span class="error-message">Please enter a valid email address.</span>
+                        </div>
+                        
+                        <div class="form-group" id="group-subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Collaboration Inquiry">
+                            <span class="error-message">Subject cannot be empty.</span>
+                        </div>
+                        
+                        <div class="form-group" id="group-message">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hi Meet, I would love to connect..."></textarea>
+                            <span class="error-message">Message must be at least 10 characters long.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
+                            Send Message <i class="far fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Meet Shingala. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart"></i> and pure code.</p>
+    </footer>
+
+    <!-- Interactive Ambient Visualizer Widget -->
+    <div class="lofi-widget" id="lofi-widget" title="Ambient Lo-fi Studio Player">
+        <button class="lofi-btn" id="lofi-btn" aria-label="Play Ambient Music">
+            <i class="fas fa-play"></i>
+        </button>
+        <div class="lofi-visualizer">
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+            <div class="v-bar"></div>
+        </div>
+        <audio id="ambient-audio" loop preload="none">
+            <!-- Simulated background noise / Royalty free stream source -->
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- WhatsApp Floating Action Badge -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/910000000000?text=Hi%20Meet,%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect!" 
+           target="_blank" 
+           class="whatsapp-btn" 
+           id="whatsapp-btn"
+           aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Chat with Meet</span>
+        </a>
+    </div>
+
+    <!-- Interactive AI Assistant Bot Widget -->
+    <div class="chatbot-widget" id="chatbot-widget">
+        <button class="chatbot-toggle-btn" id="chatbot-toggle-btn" aria-label="Open AI Assistant Chatbot">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-header-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <div class="chat-header-name">Lab Assistant</div>
+                        <div class="chat-header-status">
+                            <span class="availability-dot"></span> Online
+                        </div>
+                    </div>
+                </div>
+                <button class="chat-close-btn" id="chat-close-btn" aria-label="Close Chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Chat history window -->
+            <div class="chat-history" id="chat-history">
+                <div class="chat-msg bot">
+                    Hello! I'm Meet's AI assistant. Ask me anything about his projects, technical skills, or education.
+                </div>
+            </div>
+
+            <!-- Quick click questions -->
+            <div class="chat-quick-replies" id="chat-quick-replies">
+                <button class="quick-reply-chip" data-question="Tell me about Meet's projects.">Projects Overview</button>
+                <button class="quick-reply-chip" data-question="What are Meet's top skills?">Top Skills</button>
+                <button class="quick-reply-chip" data-question="Is Meet looking for internships?">Internships Info</button>
+                <button class="quick-reply-chip" data-question="How can I contact Meet?">Get Contact Links</button>
+            </div>
+
+            <!-- Input textbox form -->
+            <form class="chat-input-form" id="chat-input-form">
+                <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" class="chat-send-btn" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Logic Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
