@@ -241,8 +241,8 @@ document.addEventListener('DOMContentLoaded', () => {
         function getParticleColors() {
             const isLight = body.getAttribute('data-theme') === 'light';
             return {
-                primary: isLight ? 'rgba(196, 140, 84, 0.45)' : 'rgba(212, 163, 115, 0.35)', // Gold
-                secondary: isLight ? 'rgba(122, 133, 94, 0.35)' : 'rgba(204, 213, 174, 0.3)' // Sage
+                primary: isLight ? 'rgba(67, 97, 238, 0.45)' : 'rgba(94, 124, 226, 0.35)', // Royal Blue / Cosmic Blue
+                secondary: isLight ? 'rgba(163, 126, 250, 0.35)' : 'rgba(163, 126, 250, 0.3)' // Neon Violet
             };
         }
 
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (distance < 110) {
                         const alpha = (110 - distance) / 110 * 0.12;
                         const isLight = body.getAttribute('data-theme') === 'light';
-                        ctx.strokeStyle = isLight ? `rgba(196, 140, 84, ${alpha})` : `rgba(212, 163, 115, ${alpha})`;
+                        ctx.strokeStyle = isLight ? `rgba(67, 97, 238, ${alpha})` : `rgba(94, 124, 226, ${alpha})`;
                         ctx.lineWidth = 0.8;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
